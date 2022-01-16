@@ -11,8 +11,7 @@ public class Grades {
         if (this.pointer == 10) {
             return;
         }
-        this.grades[this.pointer] = value;
-        this.pointer++;
+        this.grades[this.pointer++] = value;
     }
 
     public int getLastAddedGrade() {
@@ -22,13 +21,13 @@ public class Grades {
         return this.grades[this.pointer - 1];
     }
 
-    public int getAverageGrade() {
-        int sum = 0;
-        for (int i = 0; i < grades.length; i++) {
+    public double getAverageGrade() {
+        double sum = 0;
+        for (int i = 0; i < pointer; i++) {
            sum = sum + grades[i];
-
         }
-        return sum / grades.length + 1;
+//        System.out.println("sum: " + sum + " pointer " + pointer);
+        return sum / pointer;
 
     }
 }

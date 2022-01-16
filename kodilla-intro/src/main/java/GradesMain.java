@@ -13,13 +13,10 @@ public class GradesMain {
         gradeBook.add(0);
         gradeBook.add(4);
 
-        gradeBook.add(444);
-        gradeBook.add(555);
-
         int lastAddedGrade = gradeBook.getLastAddedGrade();
         System.out.println("last added grade: " + lastAddedGrade);
 
-        int averageGrade = gradeBook.getAverageGrade();
+        double averageGrade = gradeBook.getAverageGrade();
         System.out.println("average grade: " + averageGrade);
     }
 }
