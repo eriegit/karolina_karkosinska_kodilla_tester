@@ -1,13 +1,22 @@
 import java.util.Random;
 
 public class RandomNumbers {
+
+    public static int getMin() {
+        return min;
+    }
+
+    public static int getMax() {
+        return max;
+    }
+
     public static int min = 31;
     public static int max = 0;
 
 
     public static void main(String[] args) {
         getCountOfRandomNumber(5001);
-        System.out.println("min " + min + ", max " + max);
+        System.out.println("min " + getMin() + ", max " + getMax());
     }
 
     public static void getCountOfRandomNumber(int limit) {
@@ -26,4 +35,3 @@ public class RandomNumbers {
         }
     }
 }
-
