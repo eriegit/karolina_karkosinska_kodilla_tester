@@ -4,7 +4,7 @@ public abstract class Shape {
 
     private String shapeName;
 
-    void setShapeName(String shapeName) {
+    public void setShapeName(String shapeName) {
         this.shapeName = shapeName;
     }
 
