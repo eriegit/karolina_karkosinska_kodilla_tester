@@ -4,22 +4,20 @@ public class Rectangular extends Shape {
     private final int sideALength;
     private final int sideBLength;
 
-
     public Rectangular(int sideALength, int sideBLength) {
         this.sideALength = sideALength;
         this.sideBLength = sideBLength;
-        shapeName = "Rectangular";
-
+        setShapeName("Rectangular");
     }
 
     @Override
-    public void calculateArea() {
-        area = sideALength * sideBLength;
+    public double calculateArea() {
+        return sideALength * sideBLength;
     }
 
     @Override
-    public void calculatePerimeter() {
-        perimeter = (2 * sideALength) + (2 * sideBLength);
+    public double calculatePerimeter() {
+        return (2 * sideALength) + (2 * sideBLength);
 
     }
 }

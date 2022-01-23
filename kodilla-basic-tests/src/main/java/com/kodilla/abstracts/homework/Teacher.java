@@ -4,8 +4,8 @@ public class Teacher extends Job {
 
     public Teacher(int salary) {
         super(salary);
-        jobName = "Teacher";
-        jobDescription = " - gives lessons. ";
+        setJobName("Teacher");
+        setJobDescription(" - gives lessons. ");
 
 
     }

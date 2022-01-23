@@ -1,16 +1,20 @@
 package com.kodilla.abstracts.homework;
 
 public abstract class Shape {
-    double area;
-    double perimeter;
-    String shapeName;
 
-    public abstract void calculateArea();
+    private String shapeName;
 
-    public abstract void calculatePerimeter();
-
-    public void printResults() {
-        System.out.println(shapeName + " Area: " + area + " Perimeter: " + perimeter);
+    void setShapeName(String shapeName) {
+        this.shapeName = shapeName;
     }
+
+    public String getShapeName() {
+        return shapeName;
+    }
+
+    public abstract double calculateArea();
+
+    public abstract double calculatePerimeter();
+
 
 }

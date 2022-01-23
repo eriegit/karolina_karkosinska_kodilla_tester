@@ -5,17 +5,18 @@ public class Square extends Shape {
 
     public Square(int sideLength) {
         this.sideLength = sideLength;
-        shapeName = "Square";
+        setShapeName("Square");
+
     }
 
     @Override
-    public void calculateArea() {
-        area = sideLength * sideLength;
+    public double calculateArea() {
+        return sideLength * sideLength;
     }
 
     @Override
-    public void calculatePerimeter() {
-        perimeter = 4 * sideLength;
+    public double calculatePerimeter() {
+        return 4 * sideLength;
 
     }
 }

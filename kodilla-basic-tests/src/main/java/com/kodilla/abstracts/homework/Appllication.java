@@ -5,17 +5,18 @@ public class Appllication {
         Shape square = new Square(5);
         square.calculateArea();
         square.calculatePerimeter();
-        square.printResults();
+        System.out.println(square.getShapeName() + " Area:  " + square.calculateArea() + " Perimeter:  " + square.calculatePerimeter());
 
         Shape circle = new Circle(3);
         circle.calculateArea();
         circle.calculatePerimeter();
-        circle.printResults();
+        System.out.println(circle.getShapeName() + " Area:  " + circle.calculateArea() + " Perimeter:  " + circle.calculatePerimeter());
 
         Shape rectangular = new Rectangular(3, 7);
         rectangular.calculateArea();
         rectangular.calculatePerimeter();
-        rectangular.printResults();
+
+        System.out.println(rectangular.getShapeName() + " Area:  " + rectangular.calculateArea() + " Perimeter:  " + rectangular.calculatePerimeter());
 
     }
 }
