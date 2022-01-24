@@ -12,4 +12,9 @@ public class Calculator {
     public int square(int c) {
         return c * c;
     }
+
+//this method below was added to test 'double' not 'int' type
+    public double square(double c) {
+        return c * c;
+    }
 }
