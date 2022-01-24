@@ -9,8 +9,8 @@ public class Application {
 
 
         int sumResult = calculator.sum(a, b);
-        boolean correct = ResultChecker.assertEquals(13, sumResult);
-        if (correct) {
+        boolean sumCorrect = ResultChecker.assertEquals(13, sumResult);
+        if (sumCorrect) {
             System.out.println("Metoda sum działa poprawnie dla liczb " + a + " i " + b);
         } else {
             System.out.println("Metoda sum nie działa poprawnie dla liczb " + a + " i " + b);
@@ -18,8 +18,8 @@ public class Application {
 
 
         int subtractResult = calculator.subtract(a, b);
-        boolean correct1 = ResultChecker.assertEquals(-3, subtractResult);
-        if (correct1) {
+        boolean subtractCorrect = ResultChecker.assertEquals(-3, subtractResult);
+        if (subtractCorrect) {
             System.out.println("Metoda subtract działa poprawnie dla liczb " + a + " i " + b);
         } else {
             System.out.println("Metoda subtract nie działa poprawnie dla liczb " + a + " i " + b);
@@ -27,8 +27,8 @@ public class Application {
 
 
         int squareResult = calculator.square(c);
-        boolean correct2 = ResultChecker.assertEquals(100, squareResult);
-        if (correct2) {
+        boolean squareCorrect = ResultChecker.assertEquals(100, squareResult);
+        if (squareCorrect) {
             System.out.println("Metoda square działa poprawnie dla liczby " + c);
         } else {
             System.out.println("Metoda square nie działa poprawnie dla liczby " + c);
