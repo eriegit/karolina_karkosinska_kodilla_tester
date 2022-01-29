@@ -39,7 +39,7 @@ public class Bank {
         int sum = 0;
         for (int i = 0; i < cashMachines.length; i++) {
             CashMachine cashMachine = this.cashMachines[i];
-            sum += cashMachine.getNumberOfWithdrawals();
+            sum += cashMachine.getNumberOfDeposits();
         }
         return sum;
     }
@@ -59,7 +59,7 @@ public class Bank {
             CashMachine cashMachine = this.cashMachines[i];
             sum += cashMachine.getSumOfDeposits();
         }
-        int averageBankDeposit = sum / getBankNumberOfDeposits();
+        double averageBankDeposit = sum / getBankNumberOfDeposits();
         return averageBankDeposit;
     }
 
