@@ -45,23 +45,26 @@ public class Bank {
     }
 
     public double getAverageBankWithdrawal() {
-        int averageBankWithdrawal;
         int sum = 0;
         for (int i = 0; i < cashMachines.length; i++) {
             CashMachine cashMachine = this.cashMachines[i];
             sum += cashMachine.getSumOfWithdrawals();
         }
-        return averageBankWithdrawal = sum / getBankNumberOfWithdrawals();
+        return sum / getBankNumberOfWithdrawals();
     }
 
     public double getAverageBankDeposit() {
-        int averageBankDeposit;
         int sum = 0;
         for (int i = 0; i < cashMachines.length; i++) {
             CashMachine cashMachine = this.cashMachines[i];
             sum += cashMachine.getSumOfDeposits();
         }
-        return averageBankDeposit = sum / getBankNumberOfDeposits();
+        int averageBankDeposit = sum / getBankNumberOfDeposits();
+        return averageBankDeposit;
+    }
+
+    public CashMachine[] getCashMachines() {
+        return cashMachines;
     }
 }
 

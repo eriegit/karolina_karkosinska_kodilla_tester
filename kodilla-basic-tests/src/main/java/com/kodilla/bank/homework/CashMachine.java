@@ -8,7 +8,6 @@ public class CashMachine {
     private int numberOfWithdrawals;
     private int sumOfDeposits;
     private int sumOfWithdrawals;
-
     private int balance;
 
     // constructors
@@ -27,7 +26,7 @@ public class CashMachine {
             sumOfDeposits = sumOfDeposits + transaction;
 
         } else {
-            numberOfWithdrawals--;
+            numberOfWithdrawals++;
             sumOfWithdrawals = sumOfWithdrawals + transaction;
         }
         balance = balance + transaction;
