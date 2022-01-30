@@ -2,11 +2,16 @@ package com.kodilla.collections.interfaces.homework;
 
 public class Ford implements Car {
 
+    private int increaseBy;
     private int speed;
+
+    public Ford(int increaseBy) {
+        this.increaseBy = increaseBy;
+    }
 
     @Override
     public void increaseSpeed() {
-        speed = speed + 15;
+        speed = speed + increaseBy;
 
     }
 
@@ -19,5 +24,10 @@ public class Ford implements Car {
     @Override
     public int getSpeed() {
         return speed;
+    }
+
+    @Override
+    public int getIncreaseBy() {
+        return increaseBy;
     }
 }

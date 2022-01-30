@@ -2,11 +2,16 @@ package com.kodilla.collections.interfaces.homework;
 
 public class Citroen implements Car {
 
+    private int increaseBy;
     private int speed;
+
+    public Citroen(int increaseBy) {
+        this.increaseBy = increaseBy;
+    }
 
     @Override
     public void increaseSpeed() {
-        speed = speed + 5;
+        speed = speed + increaseBy;
 
     }
 
@@ -19,5 +24,10 @@ public class Citroen implements Car {
     @Override
     public int getSpeed() {
         return speed;
+    }
+
+    @Override
+    public int getIncreaseBy() {
+        return increaseBy;
     }
 }

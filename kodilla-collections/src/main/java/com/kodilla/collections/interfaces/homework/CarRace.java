@@ -4,15 +4,15 @@ package com.kodilla.collections.interfaces.homework;
 public class CarRace {
     public static void main(String[] args) {
 
-        Citroen citroen = new Citroen();
+        Citroen citroen = new Citroen(5);
         doRace(citroen);
 //        showCarDoRaceResult(citroen);
 
-        Ford ford = new Ford();
+        Ford ford = new Ford(15);
         doRace(ford);
 //        showCarDoRaceResult(ford);
 
-        Renault renault = new Renault();
+        Renault renault = new Renault(25);
         doRace(renault);
 //        showCarDoRaceResult(renault);
     }
