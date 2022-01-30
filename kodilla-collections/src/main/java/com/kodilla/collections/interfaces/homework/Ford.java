@@ -4,10 +4,6 @@ public class Ford implements Car {
 
     private int speed;
 
-    public Ford() {
-    }
-
-
     @Override
     public void increaseSpeed() {
         speed = speed + 15;

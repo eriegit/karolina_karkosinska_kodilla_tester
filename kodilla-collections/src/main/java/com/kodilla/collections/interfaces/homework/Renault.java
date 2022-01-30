@@ -4,9 +4,6 @@ public class Renault implements Car {
 
     private int speed;
 
-    public Renault() {
-    }
-
 
     @Override
     public void increaseSpeed() {
