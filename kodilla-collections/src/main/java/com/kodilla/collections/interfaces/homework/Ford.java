@@ -30,4 +30,6 @@ public class Ford implements Car {
     public int getIncreaseBy() {
         return increaseBy;
     }
+
+
 }
