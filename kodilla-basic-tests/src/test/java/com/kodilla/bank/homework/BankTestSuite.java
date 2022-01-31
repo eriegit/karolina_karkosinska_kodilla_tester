@@ -11,6 +11,7 @@ public class BankTestSuite {
         CashMachine[] cashMachinesArray = bankObject.getCashMachines();
         assertEquals(0, cashMachinesArray.length);
     }
+
     @Test
     public void shouldNotAddNullElementToArray() {
         Bank bankObject = new Bank();
@@ -19,8 +20,9 @@ public class BankTestSuite {
         assertEquals(0, cashMachinesArray.length);
         // the method addCashMachine should be improved
     }
+
     @Test
-    public void shouldAddTwoCashMachinesToArray(){
+    public void shouldAddTwoCashMachinesToArray() {
         Bank bankObject = new Bank();
         CashMachine cashMachine1 = new CashMachine();
         CashMachine cashMachine2 = new CashMachine();
@@ -30,8 +32,9 @@ public class BankTestSuite {
         assertEquals(2, cashMachinesArray.length);
 
     }
+
     @Test
-    public void shouldCalculateAverageBankDeposit(){
+    public void shouldCalculateAverageBankDeposit() {
         Bank bankObject = new Bank();
         CashMachine cashMachine1 = new CashMachine();
         CashMachine cashMachine2 = new CashMachine();
