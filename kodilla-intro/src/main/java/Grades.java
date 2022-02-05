@@ -1,17 +1,18 @@
 public class Grades {
-    private int[] grades;
+    private int[] grades; // tablica
     private int pointer;
 
     public Grades() {
-        this.grades = new int[10];
-        this.pointer = 0;
+        this.grades = new int[10]; // zmiennej grades (tablica przechowująca oceny) przypisujemy wartość 10
+        this.pointer = 0; //zmienna, która będzie "monitorować" aktualną liczbę elementów w tablicy(size),
+        // a raczej będzie wskazywać na której pozycji w tablicy
     }
 
     public void add(int value) {
         if (this.pointer == 10) {
-            return;
+            return; // return w metodzie void przerywa działanie metody
         }
-        this.grades[this.pointer++] = value;
+        this.grades[this.pointer++] = value; // inaczej: this.grades[this.pointer] = value; this.pointer++;
     }
 
     public int getLastAddedGrade() {
@@ -26,7 +27,7 @@ public class Grades {
         for (int i = 0; i < pointer; i++) {
            sum = sum + grades[i];
         }
-//        System.out.println("sum: " + sum + " pointer " + pointer);
+//        System.out.println("sum: " + sum + " pointer " + pointer); // pozwala zobaczyć/sprawdzić metodę obliczania
         return sum / pointer;
 
     }

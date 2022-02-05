@@ -19,7 +19,7 @@ public class UserMain {
         User user9 = new User("Jacek", 35);
         addUser(user9);
         double averageAge = getAverageAge();
-        System.out.println("Names of users younger than the average users' age: ");
+        System.out.println("Names of users younger than the average user age: ");
         printNamesOfUsersYoungerThanAverageAge(averageAge);
     }
 
@@ -38,7 +38,8 @@ public class UserMain {
         for (int i = 0; i < pointer; i++) {
             sum = sum + users[i].age;
         }
-//        System.out.println("sum: " + sum + " pointer " + pointer);
+        System.out.println("sum: " + sum + " pointer " + pointer);
+        System.out.println("that is:  " + (sum / pointer));
         return sum / pointer;
 
     }

@@ -4,28 +4,28 @@ import java.util.Objects;
 
 public class Stamp {
     private String stampName;
-    private double stampHeight;
-    private double stampWidth;
+    private double stampHeightCm; // podaj w czym wyrażone wartości inch/cm można też int mm
+
+    private double stampWidthCm;
     private boolean stampStamped;
 
-    public Stamp(String stampName, double stampHeight, double stampWidth, boolean stampStamped) {
+    public Stamp(String stampName, double stampHeightCm, double stampWidthCm, boolean stampStamped) {
         this.stampName = stampName;
-        this.stampHeight = stampHeight;
-        this.stampWidth = stampWidth;
+        this.stampHeightCm = stampHeightCm;
+        this.stampWidthCm = stampWidthCm;
         this.stampStamped = stampStamped;
     }
-// TODO Dlaczego mimo zakomentowania getterów apka nadal działa?
 
 //    public String getStampName() {
 //        return stampName;
 //    }
 //
-//    public double getStampHeight() {
-//        return stampHeight;
+//    public double getStampHeightCm() {
+//        return stampHeightCm;
 //    }
 //
-//    public double getStampWidth() {
-//        return stampWidth;
+//    public double getStampWidthCm() {
+//        return stampWidthCm;
 //    }
 
     @Override
@@ -33,21 +33,21 @@ public class Stamp {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Stamp stamp = (Stamp) o;
-        return Double.compare(stamp.stampHeight, stampHeight) == 0 && Double.compare(stamp.stampWidth, stampWidth) == 0 && stampStamped == stamp.stampStamped && stampName.equals(stamp.stampName);
+        return Double.compare(stamp.stampHeightCm, stampHeightCm) == 0 && Double.compare(stamp.stampWidthCm, stampWidthCm) == 0 && stampStamped == stamp.stampStamped && stampName.equals(stamp.stampName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(stampName, stampHeight, stampWidth, stampStamped);
+        return Objects.hash(stampName, stampHeightCm, stampWidthCm, stampStamped);
     }
 
     @Override
     public String toString() {
         return "Stamp{" +
                 "  Name '" + stampName + '\'' +
-                ", Height " + stampHeight +
-                ", Width " + stampWidth +
-                ", Stamped " + stampStamped +
+                ", Height " + stampHeightCm +
+                ", Width " + stampWidthCm +
+                ", Stamped " + stampStamped + //TODO print true = stamped, false = not stamped
                 '}';
     }
 

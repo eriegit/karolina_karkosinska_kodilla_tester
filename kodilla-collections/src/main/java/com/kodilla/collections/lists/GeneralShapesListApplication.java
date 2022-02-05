@@ -5,12 +5,14 @@ import com.kodilla.collections.interfaces.Shape;
 import com.kodilla.collections.interfaces.Square;
 import com.kodilla.collections.interfaces.Triangle;
 
+
 import java.util.LinkedList;
 import java.util.List;
 
-class GeneralShapesListApplication { // TODO w treści kursu nie ma 'public', dlaczego?
+class GeneralShapesListApplication {
     public static void main(String[] args) {
-        List<Shape> shapes = new LinkedList<>(); // Obiekty typu Shape mogą być przechowywany w kolekcji typu List w zmiennej o nazwie shapes do której przypisany jest nowy obiekt klasy LinkedList
+        List<Shape> shapes = new LinkedList<>(); // Obiekty typu Shape mogą być przechowywany w kolekcji typu List
+        // w zmiennej o nazwie shapes do której przypisany jest nowy obiekt klasy LinkedList
         // Shape jest typem zmiennej implementacja kolekcji LinkedList
         Square square = new Square(12.0); //dany obiekt
         shapes.add(square);

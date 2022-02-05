@@ -15,7 +15,7 @@ public class RandomNumbers {
 
 
     public static void main(String[] args) {
-        getCountOfRandomNumber(5001);
+        getCountOfRandomNumber(5001); // wywołujemy metodę i podajemy limit
         System.out.println("min " + getMin() + ", max " + getMax());
     }
 

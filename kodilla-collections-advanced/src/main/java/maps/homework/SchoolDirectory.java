@@ -38,6 +38,7 @@ public class SchoolDirectory {
             System.out.println(entry.getKey() + "  " + entry.getValue());
             // nie chce działać bez dodanej spacji, nie wie, że to string
         }
+
     }
 }
 
