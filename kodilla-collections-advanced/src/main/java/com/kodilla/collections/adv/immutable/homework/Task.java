@@ -1,7 +1,7 @@
 package com.kodilla.collections.adv.immutable.homework;
 
-public class final Task {
-    String title;
-    int duration;
+public final class Task {
+    protected final String title; // czy lepiej 'final private', jeśli tak, dlaczego?
+    protected final int duration;
 
 }
