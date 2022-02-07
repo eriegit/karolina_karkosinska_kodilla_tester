@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class BookManager {
 
-    static Set<Book> books = new HashSet<>(); // hash set bedzie eliminowal duplikaty z automatu
+    private static Set<Book> books = new HashSet<>(); // hash set bedzie eliminowal duplikaty z automatu
 
 
     public static Book createBook(String title, String author) {
