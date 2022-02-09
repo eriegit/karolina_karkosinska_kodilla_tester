@@ -34,7 +34,7 @@ public class GradesTestSuite {
         assertEquals(3.66, grades.getAverage(), 0.01);
     }
     @Test
-    public void shouldReturnAverageEqualsZeroIsArrayIsEmpty() {
+    public void shouldReturnAverageEqualsZeroIfArrayIsEmpty() {
         Grades grades = new Grades();
         assertEquals(0, grades.getAverage(), 0.0001);
     }

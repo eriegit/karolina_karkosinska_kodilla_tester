@@ -10,6 +10,9 @@ public class Bank {
     }
 
     public void addCashMachine(CashMachine cashMachine) {
+        if (cashMachine == null) {
+            return;
+        }
         this.numberOfCashMachines++;
         CashMachine[] newTab = new CashMachine[this.numberOfCashMachines];
         System.arraycopy(cashMachines, 0, newTab, 0, cashMachines.length);
@@ -54,7 +57,7 @@ public class Bank {
     }
 
     public double getAverageBankDeposit() {
-        int sum = 0;
+        double sum = 0;
         for (int i = 0; i < cashMachines.length; i++) {
             CashMachine cashMachine = this.cashMachines[i];
             sum += cashMachine.getSumOfDeposits();

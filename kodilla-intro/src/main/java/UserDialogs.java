@@ -1,15 +1,16 @@
 import java.util.Scanner;
 
 public class UserDialogs {
-    public static String getUsername() {
-        Scanner scanner = new Scanner(System.in);                 // [1]
-        while (true) {                                            // [2]
-            System.out.println("Enter your name:");                // [3]
-            String name = scanner.nextLine().trim();               // [4]
-            if (name.length() >= 2) {                              // [5]
-                return name;                                        // [6]
+    public static String getUsername() { // static - Metody takie  mogą być wywoływane wprost na klasie,
+                                         //  bez konieczności tworzenia obiektu danej klasy.
+        Scanner scanner = new Scanner(System.in);                 // [1] wbudowana w Javę klasa Scanner
+        while (true) {                                            // [2]wywołujemy metodę nextLine z klasy Scanner
+            System.out.println("Enter your name:");                // [3] (trim usuwa spacje na pocz i k)
+            String name = scanner.nextLine().trim();               // [4]Metoda ta pozwala użytkownikowi na wprowadzenie tekstu z klawiatury, który
+            if (name.length() >= 2) {                              // [5] zostanie przekazany do naszego programu po naciśnięciu przycisku Enter
+                return name;                                        // [6] instrukcja return kończy wykonywanie metody
             }
-            System.out.println("Name is too short. Try again.");
+            System.out.println("Your name is too short. Try again.");
         }
     }
 

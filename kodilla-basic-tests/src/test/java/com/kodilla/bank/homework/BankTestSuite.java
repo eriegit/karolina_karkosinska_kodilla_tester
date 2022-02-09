@@ -18,7 +18,6 @@ public class BankTestSuite {
         bankObject.addCashMachine(null);
         CashMachine[] cashMachinesArray = bankObject.getCashMachines();
         assertEquals(0, cashMachinesArray.length);
-        // the method addCashMachine should be improved
     }
 
     @Test
@@ -55,7 +54,7 @@ public class BankTestSuite {
 
         CashMachine[] cashMachinesArray = bankObject.getCashMachines();
         double averageBankDeposit = bankObject.getAverageBankDeposit();
-        assertEquals(164.28, averageBankDeposit);
+        assertEquals(164.28571428571428, averageBankDeposit);
 
     }
 

@@ -19,12 +19,13 @@ public class CashMachine {
     }
 // methods
 
-    //when adding should make sure to add 10, 20 etc.
+    //TODO when adding should make sure to add 10, 20 etc.
     public void addTransaction(int transaction) {
-        if (transaction > 0) {
+        if (transaction == 0) {
+            return;
+        } else if (transaction > 0) {
             numberOfDeposits++;
             sumOfDeposits = sumOfDeposits + transaction;
-
         } else {
             numberOfWithdrawals++;
             sumOfWithdrawals = sumOfWithdrawals + transaction;

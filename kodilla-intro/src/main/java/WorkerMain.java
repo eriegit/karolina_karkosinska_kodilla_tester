@@ -58,6 +58,9 @@ public class WorkerMain {
         printNamesOfWorkersYoungerThanAverageAge(averageWorkerAge);
 
         // !!!! tutaj wywołujemy metodę printNamesOf... której zmienną jest averageWorkerAge
+
+        System.out.println("Worker name: " + worker5.getWorkerName() + ", worker age: " + worker5.getWorkerAge());
+        // tutaj wykorzystuję gettery z klasy Worker
     }
 }
 

@@ -12,6 +12,7 @@ public class BookManager {
 
         Book book = new Book(title, author);
         if (books.contains(book)) {
+
             for (Book currentBook : books)
                 if (currentBook.equals(book)) {
                     return currentBook;
