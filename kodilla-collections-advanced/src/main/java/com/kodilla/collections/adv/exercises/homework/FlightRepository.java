@@ -15,7 +15,6 @@ public class FlightRepository {
         flights.add(new Flight("London", "Warsaw"));
         flights.add(new Flight("Wroclaw", "London"));
 
-        System.out.println(flights);
         return flights;
 
     }
