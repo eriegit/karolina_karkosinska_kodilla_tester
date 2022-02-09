@@ -43,12 +43,11 @@ public class Stamp {
 
     @Override
     public String toString() {
-        return "Stamp{" +
-                "  Name '" + stampName + '\'' +
+        return "Stamp" +
+                "  Name " + stampName  +
                 ", Height " + stampHeightCm +
                 ", Width " + stampWidthCm +
-                ", Stamped " + stampStamped + //TODO print true = stamped, false = not stamped
-                '}';
+                ", Stamped " + stampStamped; //TODO print true = stamped, false = not stamped
     }
 
 //    public boolean isStampStamped() {
