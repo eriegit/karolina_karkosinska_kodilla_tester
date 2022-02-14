@@ -7,8 +7,11 @@ import java.util.Optional;
 
 public class Application {
     public static void main(String[] args) {
+
         for (Student newStudent : Application.getStudentsTeachers()) {
+
             System.out.print("Student: " + newStudent.getStudentName() + ", ");
+
             Optional<Teacher> optionalTeacher = Optional.ofNullable(newStudent.getTeacher());
             optionalTeacher.ifPresentOrElse(
                     (value) // lambda ?
@@ -25,16 +28,18 @@ public class Application {
         }
     }
 
-
     public static List<Student> getStudentsTeachers() {
-        List<Student> students = new ArrayList<>(6);
+        List<Student> students = new ArrayList<>(10);
         students.add(new Student("Walter White", new Teacher("John")));
         students.add(new Student("Jessie Pinkman", new Teacher("Mary")));
         students.add(new Student("Tuco Salamanca", new Teacher("Bart")));
         students.add(new Student("Gus Firing", null));
         students.add(new Student("Gale Boetticher", new Teacher("Gabi")));
         students.add(new Student("Mike Ehrmantraut", null));
-
+        students.add(new Student("Gale Boetticher", new Teacher("Gabi")));
+        // not resistant to duplicates
+        students.add(new Student("Steve Jobs", new Teacher("Gabi")));
+        // one teacher can teach several students
         return students;
     }
 
