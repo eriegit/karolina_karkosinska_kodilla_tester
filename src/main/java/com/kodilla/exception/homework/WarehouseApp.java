@@ -12,12 +12,10 @@ public class WarehouseApp {
         Warehouse.addOrder(new Order("8", "highlighter pink"));
 
         try {
-            Warehouse.getOrder("0");
+            Warehouse.getOrder("7");
         } catch (OrderDoesntExistException e) {
-            System.out.println(" Order does not exist. Try again.");
+            System.out.println(e.getMessage());
         }
-
-
     }
 }
 
